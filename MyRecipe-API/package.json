@@ -1,0 +1,18 @@
+{
+  "name": "myrecipe-api",
+  "version": "1.0.0",
+  "description": "The web api of MyRecipe App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abdulkareem Kousah",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.2",
+    "nodemon": "^2.0.2"
+  }
+}

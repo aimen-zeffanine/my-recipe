@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' *; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content: *;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>MyRecipe</title>
+    </head>
+    <body>
+
+        <nav class="navbar fixed-top bg-warning navbar-dark">
+            <button class="btn btn-sm btn-warning navigator" id="back-button" data-navigate="back">
+                <i class="fas fa-angle-right"></i>
+            </button>
+            <a class="navbar-brand">وصفتي</a>
+            <button class="btn btn-sm btn-warning side-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="side-menu-wrapper">
+                <div class="side-menu-header">
+                    <div class="side-menu-close">
+                        <button class="btn btn-sm btn-warning">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="side-menu-content centre-text">
+                    <div class="side-menu-image-wrapper">
+                        <img src="./img/logo.png" alt="صورة المستخدم" class="side-menu-image" id="side-menu-user-image">
+                    </div>
+                    <h5 class="side-menu-user-name" id="side-menu-user-name">اسم المستخدم</h5>
+                </div>
+                <hr />
+                <div class="side-menu-links">
+                    <button class="btn btn-sm btn-warning form-control form-group side-link navigator" data-navigate="user-profile">
+                        ملف المستخدم
+                        <span class="side-span">
+                            <i class="fa fa-users-cog"></i>
+                        </span>
+                    </button>
+                    <button class="btn btn-sm btn-warning form-control form-group side-link" id="logout-button">
+                        تسجيل الخروج
+                        <span class="side-span">
+                            <i class="fa fa-sign-out-alt"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container pages-container">
+            <div class="row">
+                <div class="col" id="pages">
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!-- scripts -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="js/ajaxer.js"></script>
+        <script type="text/javascript" src="js/Router.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

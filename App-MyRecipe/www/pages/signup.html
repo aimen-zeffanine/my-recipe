@@ -1,0 +1,18 @@
+<div class="signup-page-wrapper centre-text">
+    <h5>أنشئ حسابك</h5>
+    <form id="signup-form">
+        <input type="text" name="username" id="suf-username" placeholder="اسم المستخدم" class="form-control form-group" required>
+        <span class="error-message" id="suf-username-em"></span>
+        <input type="text" name="email" id="suf-email" placeholder="البريد الإلكتروني" class="form-control form-group" required>
+        <span class="error-message" id="suf-email-em"></span>
+        <input pattern="^\S{5,32}\S" type="password" name="password" id="suf-password" placeholder="كلمة المرور" class="form-control form-group" required>
+
+        <input type="password" name="password-confirm" id="suf-password-confirm" placeholder="تأكيد كلمة المرور" class="form-control form-group" required>
+        <span class="error-message" id="suf-password-em"></span>
+        <input type="submit" id="suf-submit" value="أنشئ الحساب" class="form-control form-group btn btn-warning btn-sm">
+    </form>
+    <p>
+        لديك حساب؟
+        <a class="bg-warning navigator" data-navigate="login">سجل دخولك</a>
+    </p>
+</div>

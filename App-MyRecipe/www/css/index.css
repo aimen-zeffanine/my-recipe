@@ -1,0 +1,182 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size:12px;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+    /* Padding to avoid the "unsafe" areas behind notches in the screen */
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-right, 0px);
+    text-transform:uppercase;
+    width:100%;
+}
+
+i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar-brand {
+    padding-left: 50px;
+}
+
+.pages-container {
+    padding-top: 80px;
+}
+
+nav {
+    box-shadow: 0px 0px 10px 3px rgba(255,165,0,1);
+}
+
+.side-menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    width: 70%;
+    height: 100%;
+    background-color: #ffa500;
+    box-shadow: 2px 0px 10px 3px rgba(255,165,0,1);
+    transition-duration: 0.25s;
+}
+.active {
+    left: 0;
+}
+.side-menu-close {
+    position: absolute;
+    top: 15px;
+    right: 224px;
+}
+.side-menu-image-wrapper {
+    margin-top: 70px;
+}
+.side-menu-image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.side-link {
+    text-align: right;
+}
+.side-span {
+    float: left;
+}
+.centre-text {
+    text-align: center;
+}
+.fab {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    width: 49px;
+    height: 50px;
+    background-color: #ffa500;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.post {
+    border: 1px solid #ffa500;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.post-header {
+    padding: 0 5px;
+}
+.post-user-img {
+    margin: 5px;
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.post-user-name {
+    font-size: 16px;
+}
+.post-date {
+    padding-bottom: 10px;
+}
+.post-title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffa500;
+    margin-bottom: 10px;
+}
+.post-image {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.post-details-wrapper {
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px dashed #ffa500;
+    font-size: 12px;
+    text-align: right;
+}
+.post-details-title {
+    background-color: #ffa500;
+    margin-top: -17px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 12px;
+    width: fit-content;
+}
+p {
+    margin-bottom: 0;
+}
+.post-functions {
+    font-size: 24px;
+    margin-right: 8px;
+    color: #ffa500;
+    text-align: right;
+}
+.post-functions span {
+    margin: 5px 15px;
+}
+.post-functions span i {
+    color: #ffa500;
+}
+.likes-count {
+    margin-right: 15px;
+    font-size: 14px;
+    text-align: right;
+}
+.post-content {
+    display: none;
+}
+#create-post-image-viewer {
+    margin-bottom: 15px;
+}
+.user-profile-image-wrapper {
+    width: 100%;
+}
+.user-profile-image {
+    width: 100%;
+}
+.error-message {
+    color: red;
+}
+.valid {
+    border: 1px solid green;
+}
+.invalid {
+    border: 1px solid red;
+}
+.red-heart {
+    color: red !important;
+}
+.invisible {
+    display: none;
+}

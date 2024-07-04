@@ -1,0 +1,45 @@
+<div class="create-post-page-wrapper centre-text">
+    <button class="btn btn-sm btn-warning form-control form-group" id="cpf-open-camera">
+        <i class="fa fa-camera"></i>
+        التقط صورة
+    </button>
+    <div id="create-post-image-viewer">
+        <span>ستظهر الصورة هنا</span>
+    </div>
+    <form id="create-post-form">
+        <input type="text" name="title" id="cpf-title" required class="form-control form-group" placeholder="عنوان الوصفة">
+        <h6>مكونات الوصفة</h6>
+        <span>اكتب اسم المكون وأضفه ثم كرر حتى تنتهي</span>
+        <textarea required name="components" id="cpf-components" cols="30" rows="3" readonly class="form-control form-group"></textarea>
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <input type="text" id="component-adder-text" class="form-control form-group">
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-sm btn-primary" id="component-adder-button">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <h6>خطوات التحضير</h6>
+        <span>اكتب كامل نص الخطوة ثم أضفها</span>
+        <textarea name="steps" id="cpf-steps" cols="30" rows="3" readonly class="form-control form-group"></textarea>
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <input type="text" id="step-adder-text" class="form-control form-group">
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-sm btn-primary" id="step-adder-button">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <span id="create-post-error-message"></span>
+        <input type="submit" value="انشر" class="btn btn-sm btn-warning form-control form-group">
+    </form>
+</div>
